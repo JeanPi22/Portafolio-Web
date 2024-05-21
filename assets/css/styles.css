@@ -1,6 +1,6 @@
 :root {
   --primary-color: #111621;
-  --secundary-color: #068932;
+  --secundary-color: #1e984b;
   --Green-light: #2ec866;
   --gray-color: #39424e;
   --black-color: #000000;
@@ -17,22 +17,35 @@ li {
   list-style: none;
 }
 body {
+  width: 100%;
+  min-width: 360px;
   font-family: "Mulish", sans-serif;
   font-size: 1.6rem;
   overflow: auto;
 }
 
-/* Botones */
+/* Elementos para varios lugares */
+
+.button {
+  padding: 1rem;  
+  font-weight: 900;
+  font-size: 1.8rem;
+  background-color: var(--Green-light);
+  border: none;
+  border-radius: 0.5rem;
+  color: var(--background);
+}
 
 /* Header - Navbar*/
 
 .header {
   position: fixed;
   width: 100%;
-  min-width: 360px;
   height: 7.5rem;
   background: var(--primary-color);
   color: var(--background);
+  box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.4);
+  /* z-index: 1000; */
 }
 .nav {
   display: flex;
@@ -48,7 +61,7 @@ body {
   font-size: 1.6rem;
   font-weight:900;
   margin: 0;
-  text-shadow: 0.2rem 0.2rem black;
+  text-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.8);
   color: var(--Green-light);
 }
 .nav__logo--concept {
@@ -62,6 +75,60 @@ body {
 }
 .nav__media--emailmovil {
   font-size: 1.2rem;
+}
+
+/* Información */
+
+.main {
+  width: 100%;
+  padding-top: 8rem;
+  /* position: relative; */
+  /* top: 8rem; */
+  text-align: center;
+}
+.information {
+  padding: 5rem;
+}
+.information__photo--img {
+  width: 30rem;
+}
+.information__info {
+  margin-top: 2rem;
+}
+.information__info--name, .about-me__title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--primary-color);
+}
+.information__info--name span {
+  color: var(--secundary-color);
+}
+.information__info--description, .about-me__info {
+  width: 100%;
+  font-size: 1.6rem;
+  color: var(--gray-color);
+  margin-top: 2.5rem;
+}
+.information__info--button {
+  margin-top: 3rem;
+}
+
+/* Sobre mí */
+
+.about-me {
+  width: 80%;
+  margin: 2rem auto;
+  padding: 3rem;
+  background-color: var(--Green-light);
+  border-radius: 2rem;
+}
+.about-me__title {
+  text-align: start;
+  color: white;
+}
+.about-me__info {
+  text-align: justify;
+  color: white;
 }
 
 @media (min-width:768px) {
@@ -107,6 +174,42 @@ body {
   .nav__media--emailmovil {
     display: none;
   }
+
+  /* Información */
+
+  .information {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .information__photo--img {
+    width: 50rem;
+  }
+  .information__info {
+    font-size: 1.6rem;
+    margin-right: 4rem;
+    text-align: start;
+  }
+  .information__info--name {
+    font-size: 3rem;
+  }
+  .information__info--description{
+    font-size: 1.8rem;
+  }
+
+  /* Sobre mí */
+
+  .about-me {
+    width: 90%;
+  }
+  .about-me__title {
+    font-size: 2.8rem;
+  }
+  .about-me__info {
+    font-size: 1.8rem;
+  }
+
 }
 
 @media (min-width:1201px) {
@@ -125,4 +228,28 @@ body {
     background-color: var(--Green-light);
     border-radius: 0.5rem;
   }
+
+  /* Informacion */
+  .information__photo--img {
+    width: 70rem;
+  }
+  .information__info--name {
+    font-size: 4rem;
+  }
+  .information__info--description {
+    font-size: 2.5rem;
+  }
+
+  /* Sobre mí */
+
+  .about-me {
+    width: 93%;
+  }
+  .about-me__title {
+    font-size: 3.2rem;
+  }
+  .about-me__info {
+    font-size: 2rem;
+  }
+
 }
