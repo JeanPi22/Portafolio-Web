@@ -45,7 +45,6 @@ body {
   background: var(--primary-color);
   color: var(--background);
   box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.4);
-  /* z-index: 1000; */
 }
 .nav {
   display: flex;
@@ -81,13 +80,13 @@ body {
 
 .main {
   width: 100%;
-  padding-top: 8rem;
-  /* position: relative; */
-  /* top: 8rem; */
+  padding-top: 7rem;
   text-align: center;
 }
 .information {
-  padding: 5rem;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 5rem;
 }
 .information__photo--img {
   width: 30rem;
@@ -103,9 +102,10 @@ body {
 .information__info--name span {
   color: var(--secundary-color);
 }
-.information__info--description, .about-me__info {
+.information__info--description {
   width: 100%;
   font-size: 1.6rem;
+  text-align: justify;
   color: var(--gray-color);
   margin-top: 2.5rem;
 }
@@ -116,140 +116,19 @@ body {
 /* Sobre mí */
 
 .about-me {
-  width: 80%;
-  margin: 2rem auto;
-  padding: 3rem;
+  margin: 5.5rem 0;
+  padding: 1.5rem 0;
   background-color: var(--Green-light);
-  border-radius: 2rem;
 }
 .about-me__title {
+  text-align: start;
+}
+.about-me__title, .about-me__info {
+  width: 80%;
+  margin: 3rem auto;
   text-align: start;
   color: white;
 }
 .about-me__info {
   text-align: justify;
-  color: white;
-}
-
-@media (min-width:768px) {
-
-  /* Header - Navbar*/
-  
-  .nav__media {
-    display: flex;
-    align-items: center;
-    font-size: 1.6rem;
-  }
-  .nav__logo--title {
-    font-size: 2rem;
-  } 
-  .nav__logo--concept {
-    font-size: 1.6rem;
-  }
-  .nav__media__social {
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 1.2rem;
-    margin-right: 1rem;
-  }
-  .social__github {
-    background-image: url(/assets/icons/github-mark-white.svg);  
-  }
-  .social__linkedin {
-    background-image: url(/assets/icons/linkedIn.svg);
-  }
-  .social__email {
-    background-image: url(/assets/icons/email-icon.svg);
-    cursor: auto;
-  }
-  .nav__media--email {
-    display: flex;
-    align-items: center;
-    height: 7.5rem;
-    border-bottom: var(--Green-light) solid 0.5rem;
-  }
-  .media__email {
-    margin-top: 0.7rem;
-  }
-  .nav__media--emailmovil {
-    display: none;
-  }
-
-  /* Información */
-
-  .information {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .information__photo--img {
-    width: 50rem;
-  }
-  .information__info {
-    font-size: 1.6rem;
-    margin-right: 4rem;
-    text-align: start;
-  }
-  .information__info--name {
-    font-size: 3rem;
-  }
-  .information__info--description{
-    font-size: 1.8rem;
-  }
-
-  /* Sobre mí */
-
-  .about-me {
-    width: 90%;
-  }
-  .about-me__title {
-    font-size: 2.8rem;
-  }
-  .about-me__info {
-    font-size: 1.8rem;
-  }
-
-}
-
-@media (min-width:1201px) {
-
-  /* Header - Navbar*/
-
-  .nav__link__container {
-    display: flex;
-    align-items: center;
-    height: 100%;
-  }
-  .nav__link {
-    padding: 2rem;
-  }
-  .nav__link:hover {
-    background-color: var(--Green-light);
-    border-radius: 0.5rem;
-  }
-
-  /* Informacion */
-  .information__photo--img {
-    width: 70rem;
-  }
-  .information__info--name {
-    font-size: 4rem;
-  }
-  .information__info--description {
-    font-size: 2.5rem;
-  }
-
-  /* Sobre mí */
-
-  .about-me {
-    width: 93%;
-  }
-  .about-me__title {
-    font-size: 3.2rem;
-  }
-  .about-me__info {
-    font-size: 2rem;
-  }
-
 }
