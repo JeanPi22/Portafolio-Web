@@ -18,7 +18,7 @@ li {
 }
 body {
   width: 100%;
-  min-width: 360px;
+  min-width: 320px;
   font-family: "Mulish", sans-serif;
   font-size: 1.6rem;
   overflow: auto;
@@ -27,12 +27,13 @@ body {
 /* Elementos para varios lugares */
 
 .button {
+  width: 20rem;
   padding: 1rem;  
   font-weight: 900;
   font-size: 1.8rem;
   background-color: var(--Green-light);
   border: none;
-  border-radius: 0.5rem;
+  border-radius: 0.8rem;
   color: var(--background);
 }
 
@@ -45,6 +46,7 @@ body {
   background: var(--primary-color);
   color: var(--background);
   box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.4);
+  z-index: 1000;
 }
 .nav {
   display: flex;
@@ -94,10 +96,11 @@ body {
 .information__info {
   margin-top: 2rem;
 }
-.information__info--name, .about-me__title {
+.information__info--name, .about-me__container--title {
   font-size: 2.5rem;
   font-weight: 900;
   color: var(--primary-color);
+  margin-bottom: 2.5rem;
 }
 .information__info--name span {
   color: var(--secundary-color);
@@ -107,28 +110,56 @@ body {
   font-size: 1.6rem;
   text-align: justify;
   color: var(--gray-color);
-  margin-top: 2.5rem;
 }
-.information__info--button {
+.information__info--curriculo {  
+  display: inline-block;
   margin-top: 3rem;
+}
+.curriculo__info {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-align: center;
 }
 
 /* Sobre mí */
 
 .about-me {
-  margin: 5.5rem 0;
-  padding: 1.5rem 0;
+  margin: 6rem 0 5.5rem 0;
+  padding: 1.5rem 0 13rem 0;
   background-color: var(--Green-light);
 }
-.about-me__title {
-  text-align: start;
-}
-.about-me__title, .about-me__info {
+.about-me__container {
   width: 80%;
   margin: 3rem auto;
+}
+.about-me__container--title {
   text-align: start;
   color: white;
 }
-.about-me__info {
+.about-me__container--info {
   text-align: justify;
+  color: white;
+}
+.about-me__img--source {
+  width: 25rem;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2rem;
+}
+
+/* Skills */
+
+.skills__main {
+  margin-top: 13rem;
+}
+.skills__container {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.skills__card {
+  flex: 1 0 26.6%;
 }

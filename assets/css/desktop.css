@@ -14,21 +14,27 @@
 }
 
 /* Informacion */
-.information__photo--img {
-  width: 70rem;
+.information__photo {
+  width: 25%;
+}
+.information__info {
+  width: 75%;
 }
 .information__info--name {
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 .information__info--description {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
+}
+.curriculo__info {
+  font-size: 1.8rem;
 }
 
 /* Sobre mí */
 
-.about-me__title {
-  font-size: 3.2rem;
+.about-me__container--title {
+  font-size: 3.5rem;
 }
-.about-me__info {
-  font-size: 2rem;
+.about-me__container--info {
+  font-size: 2.2rem;
 }

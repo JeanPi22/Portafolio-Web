@@ -49,11 +49,13 @@
   justify-content: space-between;
   align-items: center;
 }
-.information__photo--img {
-  width: 50rem;
+.information__photo {
+  width: 35%;
 }
 .information__info {
+  width: 65%;
   font-size: 1.6rem;
+  margin-top: 0;
   margin-right: 4rem;
   text-align: start;
 }
@@ -66,11 +68,29 @@
 
 /* Sobre mí */
 
-.about-me__title {
+.about-me {
+  padding: 2rem 0;  
+}
+.about-me__main {
   width: 90%;
+  height: 100%;
+  margin: 0 auto;  
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+.about-me__container--title {
   font-size: 2.8rem;
 }
-.about-me__info {
-  width: 90%;
+.about-me__container--info {
   font-size: 1.8rem;
+}
+.about-me__img {
+  margin-right: 3rem;
+}
+.about-me__img--source {
+  width: 30rem; 
+  position: static;
+  transform: none;
 }
