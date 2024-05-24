@@ -1,3 +1,12 @@
+/* Elementos para varios lugares de la página */
+
+.title {
+  font-size: 3.5rem;
+}
+.info {
+  font-size: 2.2rem;
+}
+
 /* Header - Navbar*/
 
 .nav__link__container {
@@ -20,21 +29,13 @@
 .information__info {
   width: 75%;
 }
-.information__info--name {
-  font-size: 3.5rem;
-}
-.information__info--description {
-  font-size: 2.2rem;
-}
 .curriculo__info {
   font-size: 1.8rem;
 }
 
-/* Sobre mí */
+/* Skills */
 
-.about-me__container--title {
-  font-size: 3.5rem;
-}
-.about-me__container--info {
-  font-size: 2.2rem;
+.skills-hobbies__card {
+  width: auto;
+  padding: 0 4rem;
 }

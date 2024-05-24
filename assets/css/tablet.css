@@ -1,3 +1,12 @@
+/* Elementos para varios lugares de la página */
+
+.title {
+  font-size: 3rem;
+}
+.info {
+  font-size: 1.8rem;
+}
+
 /* Header - Navbar*/
   
 .nav__media {
@@ -59,12 +68,6 @@
   margin-right: 4rem;
   text-align: start;
 }
-.information__info--name {
-  font-size: 3rem;
-}
-.information__info--description{
-  font-size: 1.8rem;
-}
 
 /* Sobre mí */
 
@@ -73,18 +76,10 @@
 }
 .about-me__main {
   width: 90%;
-  height: 100%;
   margin: 0 auto;  
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-between;
   align-items: center;
-}
-.about-me__container--title {
-  font-size: 2.8rem;
-}
-.about-me__container--info {
-  font-size: 1.8rem;
 }
 .about-me__img {
   margin-right: 3rem;
@@ -93,4 +88,14 @@
   width: 30rem; 
   position: static;
   transform: none;
+}
+
+/* Skills */
+
+.skills__main {
+  width: 90%;
+  margin-top: 6rem;
+}
+.skills-hobbies__card {
+  width: 33.3%;
 }

@@ -3,6 +3,7 @@
   --secundary-color: #1e984b;
   --Green-light: #2ec866;
   --gray-color: #39424e;
+  --gray-light: #b9b9b9;
   --black-color: #000000;
   --background: #edf0f1;
 }
@@ -24,7 +25,7 @@ body {
   overflow: auto;
 }
 
-/* Elementos para varios lugares */
+/* Elementos para varios lugares de la página */
 
 .button {
   width: 20rem;
@@ -35,6 +36,21 @@ body {
   border: none;
   border-radius: 0.8rem;
   color: var(--background);
+}
+.title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--primary-color);
+  margin-bottom: 2.5rem;
+}
+.info {
+  font-size: 1.6rem;
+  text-align: justify;
+  color: var(--gray-color);
+}
+.subtitle {
+  font-size: 1.8rem;
+  font-weight: 700;
 }
 
 /* Header - Navbar*/
@@ -96,20 +112,8 @@ body {
 .information__info {
   margin-top: 2rem;
 }
-.information__info--name, .about-me__container--title {
-  font-size: 2.5rem;
-  font-weight: 900;
-  color: var(--primary-color);
-  margin-bottom: 2.5rem;
-}
 .information__info--name span {
   color: var(--secundary-color);
-}
-.information__info--description {
-  width: 100%;
-  font-size: 1.6rem;
-  text-align: justify;
-  color: var(--gray-color);
 }
 .information__info--curriculo {  
   display: inline-block;
@@ -137,7 +141,6 @@ body {
   color: white;
 }
 .about-me__container--info {
-  text-align: justify;
   color: white;
 }
 .about-me__img--source {
@@ -151,15 +154,61 @@ body {
 
 /* Skills */
 
-.skills__main {
-  margin-top: 13rem;
-}
-.skills__container {
+.skills__main, .hobbies__main {
   width: 80%;
-  display: flex;
-  flex-wrap: wrap;
   margin: 0 auto;
+  margin-top: 17.5rem;
 }
-.skills__card {
-  flex: 1 0 26.6%;
+.skills-hobbies__container {    
+  display: flex;
+  flex-wrap: wrap; 
+  width: 100%;
+  justify-content: center;
+}
+.skills-hobbies__card {
+  width: 50%;
+  padding: 0 1.5rem;
+}
+.skills-hobbies__card--img {
+  height: 6rem;  
+  margin-bottom: 0.5rem;
+}
+.skills-hobbies__card--info {
+  margin-bottom: 4rem;
+}
+
+/* Hobbies */
+
+.hobbies__main {
+  margin-top: 2rem;
+}
+
+/* Educación */
+
+.education {
+  width: 100%;
+  margin-top: 2rem;
+}
+.education__title {
+  width: 100%;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 2rem 0;
+}
+.education__container {  
+  display: flex;
+  align-items: center;
+  width: 80%;
+  height: 12rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+  border: solid 0.2rem var(--gray-light);
+  border-radius: 1rem;
+}
+.education__container--card-img {
+  height: 100%;
+  margin-right: 1.5rem;
+}
+.education__card--univesity {
+  text-align: start;
 }
