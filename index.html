@@ -133,27 +133,27 @@
       <h2 class="skills-hobbies__main--title title">Hobbies</h2>
       <div class="skills-hobbies__container">
         <div class="skills-hobbies__card">
-          <img class="skills-hobbies__card--img" src="#" alt="">
+          <img class="skills-hobbies__card--img" src="./assets/icons/soccer-icon.svg" alt="">
           <p class="skills-hobbies__card--info subtitle">Jugar Fútbol</p>
         </div>
         <div class="skills-hobbies__card">
-          <img class="skills-hobbies__card--img" src="#" alt="">
+          <img class="skills-hobbies__card--img" src="./assets/icons/stadium-icon.svg" alt="">
           <p class="skills-hobbies__card--info subtitle">Ir al Estadio</p>
         </div>
         <div class="skills-hobbies__card">
-          <img class="skills-hobbies__card--img" src="#" alt="">
+          <img class="skills-hobbies__card--img" src="./assets/icons/series-icon.svg" alt="">
           <p class="skills-hobbies__card--info subtitle">Ver Series</p>
         </div>
         <div class="skills-hobbies__card">
-          <img class="skills-hobbies__card--img" src="#" alt="">
+          <img class="skills-hobbies__card--img" src="./assets/icons/music-icon.svg" alt="">
           <p class="skills-hobbies__card--info subtitle">Oir Música</p>
         </div>
         <div class="skills-hobbies__card">
-          <img class="skills-hobbies__card--img" src="#" alt="">
+          <img class="skills-hobbies__card--img" src="./assets/icons/moto-icon.svg" alt="">
           <p class="skills-hobbies__card--info subtitle">Viajar en Moto</p>
         </div>
         <div class="skills-hobbies__card">
-          <img class="skills-hobbies__card--img" src="#" alt="">
+          <img class="skills-hobbies__card--img" src="./assets/icons/camera-icon.svg" alt="">
           <p class="skills-hobbies__card--info subtitle">Tomar Fotos</p>
         </div>
       </div>
@@ -166,24 +166,26 @@
 
       <h2 class="education__title title">Formación Académica</h2>
       <div class="education__container">
-        <img class="education__container--card-img" src="./assets/icons/Photoshop-icon.svg" alt="">
+        <div class="education__container--cards">
+          <img class="education__container--card-img" src="./assets/icons/logo-pascual.svg" alt="">
           <div class="education__card--univesity">
-            <p class="education__container--card-univerty subtitle">Tecnólogo en Diseño Gráfico</p>
-            <p class="education__container--card-year info">2012 - 2016</p>
-        </div>
-      </div> 
-      <div class="education__container">
-        <img class="education__container--card-img" src="./assets/icons/Photoshop-icon.svg" alt="">
-          <div class="education__card--univesity">
-            <p class="education__container--card-univerty subtitle">Tecnólogo en Desarrollo de Software</p>
+            <p class="education__container--card-univerty subtitle">Tecnología en Diseño Gráfico</p>
             <p class="education__container--card-year info">2012 - 2016</p>
           </div>
-      </div> 
-      <div class="education__container">
-        <img class="education__container--card-img" src="./assets/icons/Photoshop-icon.svg" alt="">
-        <div class="education__card--univesity">
-          <p class="education__container--card-univerty subtitle">Formación en programación y Front End</p>
-          <p class="education__container--card-year info">2012 - 2016</p>
+        </div> 
+        <div class="education__container--cards">
+          <img class="education__container--card-img" src="./assets/icons/logo-pascual.svg" alt="">
+          <div class="education__card--univesity">
+            <p class="education__container--card-univerty subtitle">Tecnología en Desarrollo de Software</p>
+            <p class="education__container--card-year info">2012 - 2016</p>
+          </div>
+        </div> 
+        <div class="education__container--cards">
+          <img class="education__container--card-img" src="./assets/icons/logo-alura.svg" alt="">
+          <div class="education__card--univesity">
+            <p class="education__container--card-univerty subtitle">Formación en programación y Front End</p>
+            <p class="education__container--card-year info">2012 - 2016</p>
+          </div>
         </div>
       </div> 
 
@@ -191,10 +193,43 @@
 
   </main>
 
+  <!-- proyectos -->
+  
+  <section class="projects">
+
+    
+
+  </section>
+
+  <!-- Formulario -->
+
+  <form class="contact-form">
+
+    <h2 class="form__title title">Contacto</h2>
+    <p class="form__info">¿Quieres contactarme?</p>
+    <p class="form__info">Complete el siguiente formulario  y me pondré en contacto con usted lo antes posible.</p>
+    <div class="form__container">
+      <img class="form__img" src="#" alt="">
+      <div class="form__group">
+        <label class="form__group--label" for="text">Nombre</label>
+        <input class="form__group--input" type="text" placeholder="John Doe" required>
+        <label class="form__group--label" for="text">Correo</label>
+        <input class="form__group--input" type="email" placeholder="John@example.com" required>
+        <label class="form__group--label" for="text">Asunto</label>
+        <input class="form__group--input" type="text" placeholder="Escribe el asunto" required>
+        <label class="form__group--label" for="text">Mensaje</label>
+        <textarea class="form__group--message" name="mensaje" id="" placeholder="Escribe el mensaje" required></textarea>
+        <input class="form__group--sumit" type="submit" value="Enviar mensaje">
+      </div>
+    </div>
+
+  </form>
+
   <!-- footer -->
 
   <footer class="footer">
-    <p>Desarrollado por Jean Pierre Peña | PierreDev | 2024</p>
+    <p class="footer__info">Desarrollado por Jean Pierre Peña</p>
+    <p class="footer__info">PierreDev | 2024</p>
   </footer>
 
 </body>

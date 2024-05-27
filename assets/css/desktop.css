@@ -4,7 +4,7 @@
   font-size: 3.5rem;
 }
 .info {
-  font-size: 2.2rem;
+  font-size: 2rem;
 }
 
 /* Header - Navbar*/
@@ -36,6 +36,15 @@
 /* Skills */
 
 .skills-hobbies__card {
-  width: auto;
-  padding: 0 4rem;
+  width: 16.6%;
+}
+
+/* Educación */
+
+.education__container--cards {
+  width: 31%;
+  margin: 1rem;
+}
+.education__container--card-year {
+  font-size: 1.4rem;
 }
