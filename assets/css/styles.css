@@ -227,6 +227,40 @@ body {
   font-size: 1.4rem;
 }
 
+/* Proyectos */
+
+.projects {
+  width: 100%;
+  margin-top: 6rem;
+  text-align: center;
+}
+.projects__container {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.projects__cards {
+  /* border: solid 0.2rem var(--gray-light); */
+  border-radius: 1rem;
+  box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.4);
+  margin-bottom: 2.5rem;
+}
+.projects__cards--img {
+  min-width: 25rem;
+  width: 56rem;
+  /* height: auto; Pendiente de definir */
+}
+.projects__cards--info {
+  text-align: start;
+  padding: 1.5rem;
+}
+.card__info--subtitle {
+  color: var(--Green-light);
+  font-weight: 900;
+}
+
 /* Formulario */
 
 .contact-form {
