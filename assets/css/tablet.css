@@ -6,6 +6,9 @@
 .info {
   font-size: 1.6rem;
 }
+.subtitle {
+  font-size: 1.7rem;
+}
 
 /* Header - Navbar*/
   
@@ -117,4 +120,10 @@
 }
 .education__container--card-year {
   font-size: 1.4rem;
+}
+
+/* Formulario */
+
+.form__info, .form-info__container {
+  max-width: 65rem;
 }
