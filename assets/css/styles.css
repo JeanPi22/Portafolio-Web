@@ -27,7 +27,7 @@ body {
 
 /* Elementos para varios lugares de la página */
 
-.button {
+.button, .button__secondary {
   width: 20rem;
   height: 4rem;
   padding: 1rem;  
@@ -45,6 +45,19 @@ body {
   border-radius: 1rem;
   color: var(--Green-light);
 }
+.button__secondary {
+  background-color: var(--background);
+  border: solid 0.2rem var(--Green-light);
+  border-radius: 1rem;
+  color: var(--Green-light);
+}
+.button__secondary:hover{
+  cursor: pointer;
+  background-color: var(--Green-light);
+  border: none;
+  border-radius: 1rem;
+  color: var(--background);
+}
 .title {
   font-size: 2.5rem;
   font-weight: 900;
@@ -57,7 +70,7 @@ body {
   color: var(--gray-color);
 }
 .subtitle {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 700;
 }
 
@@ -239,26 +252,54 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 4rem ;
   margin: 0 auto;
 }
 .projects__cards {
-  /* border: solid 0.2rem var(--gray-light); */
-  border-radius: 1rem;
-  box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.4);
-  margin-bottom: 2.5rem;
-}
-.projects__cards--img {
+  display: flex;
+  flex-direction: column;
   min-width: 25rem;
   width: 56rem;
-  /* height: auto; Pendiente de definir */
+  border-radius: 1rem;
+  box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.4);
+}
+.projects__cards--img {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
 }
 .projects__cards--info {
-  text-align: start;
   padding: 1.5rem;
 }
 .card__info--subtitle {
   color: var(--Green-light);
   font-weight: 900;
+}
+.card__info--description {
+  text-align: center;
+}
+.card__info--pages {
+  display: flex;
+  justify-content: center;
+  gap: 1rem ;
+  margin-top: 2rem;
+}
+.info__pages--button {
+  width: 12rem;
+  font-size: 1.4rem;
+  text-align: center;
+  align-content: center;
+}
+.info__pages--button:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.info__pages--button img {
+  height: 100%;
+}
+.info__pages--button:hover img{
+  filter: brightness(0) saturate(100%) invert(100%) sepia(1%) saturate(3242%) hue-rotate(166deg) brightness(92%) contrast(106%);
 }
 
 /* Formulario */
@@ -293,6 +334,10 @@ body {
   border-radius: 1rem;
   margin: 0.5rem 0 1.5rem 0;
   padding: 0.8rem;
+}
+.form__group--input:focus, .form__group--message:focus {
+  border-color: var(--Green-light);
+  outline: none;
 }
 .form__group--message {
   height: 14rem;
