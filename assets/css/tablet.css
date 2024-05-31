@@ -7,7 +7,7 @@
   font-size: 1.6rem;
 }
 .subtitle {
-  font-size: 1.7rem;
+  font-size: 1.8rem;
 }
 
 /* Header - Navbar*/
@@ -117,9 +117,6 @@
 .education__container--cards {
   width: 47%;
   margin: 1rem;
-}
-.education__container--card-year {
-  font-size: 1.4rem;
 }
 
 /* Formulario */

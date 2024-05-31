@@ -32,7 +32,7 @@ body {
   height: 4rem;
   padding: 1rem;  
   font-weight: 900;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   background-color: var(--Green-light);
   border: none;
   border-radius: 1rem;
@@ -259,7 +259,7 @@ body {
   display: flex;
   flex-direction: column;
   min-width: 25rem;
-  width: 56rem;
+  width: 51rem;
   border-radius: 1rem;
   box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.4);
 }
