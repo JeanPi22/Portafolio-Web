@@ -30,13 +30,13 @@
   margin-right: 1rem;
 }
 .social__github {
-  background-image: url(/assets/icons/github-mark-white.svg);  
+  background-image: url(../icons/github-mark-white.svg);  
 }
 .social__linkedin {
-  background-image: url(/assets/icons/linkedIn.svg);
+  background-image: url(../icons/linkedIn.svg);
 }
 .social__email {
-  background-image: url(/assets/icons/email-icon.svg);
+  background-image: url(../icons/email-icon.svg);
   cursor: auto;
 }
 .nav__media--email {
