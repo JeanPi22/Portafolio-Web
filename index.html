@@ -22,24 +22,27 @@
     <!-- Navbar --> 
     <nav class="nav">
       <div class="nav__logo">
-        <h1 class="nav__logo--title">Jean Pierre Peña</h1>
-        <p class="nav__logo--concept">Diseño y Desarrollo Web</p>
+        <a href="./index.html">
+          <h1 class="nav__logo--title">Jean Pierre Peña</h1>
+          <p class="nav__logo--concept">Diseño y Desarrollo Web</p>
+        </a>        
       </div>
 
       <!--Desktop -->
       <ul class="nav__link__container">
-        <li class="nav__link"><a href="#">Sobre mi</a></li>
-        <li class="nav__link"><a href="#">Skill</a></li>
-        <li class="nav__link"><a href="#">Hobbies</a></li>
-        <li class="nav__link"><a href="#">Formación</a></li>
-        <li class="nav__link"><a href="#">Proyectos</a></li>
+        <li id="aboutMe" class="nav__link">Sobre mi</li>
+        <li id="skills" class="nav__link">Skill</li>
+        <li id="hobbies" class="nav__link">Hobbies</li>
+        <li id="education" class="nav__link">Formación</li>
+        <li id="projects" class="nav__link">Proyectos</li>
+        <li id="contact" class="nav__link">Contacto</li>
       </ul>
 
       <!-- tablet y  Desktop -->
       <div class="nav__media">
         <a class="nav__media__social social__github" href="https://github.com/JeanPi22?tab=repositories" target="_blank"></a>
         <a class="nav__media__social social__linkedin" href="https://www.linkedin.com/in/jean-pierre-pe%C3%B1a-6672572b6/" target="_blank"></a>
-        <a class="nav__media__social social__email" href="#"></a>
+        <a class="nav__media__social social__email" href="javascript:void(0)"></a>
         <div class="nav__media--email">
           <p class="media__email">jean.photo.grafico@gmail.com</p>
         </div>                        
@@ -68,7 +71,9 @@
         <p class="information__info--description info">Soy diseñador gráfico y desarrollador de software con enfoque en desarrollo web front-end; Html, Css, JavaScript y Wordpress.</p>
         <div class="information__info--curriculo">
           <p class="information__info--description curriculo__info">Descargar Pdf</p>
-          <button class="information__info--button button">Currículo</button>
+          <a href="https://drive.google.com/file/d/1_-BkI1bLyZ3blYR8pUSGNP7BSZ8wmOql/view?usp=sharing" target="_blank">
+            <button class="information__info--button button">Currículo</button>
+          </a>
         </div>
       </div>      
 
@@ -76,7 +81,7 @@
 
     <!-- Sobre mí -->
 
-    <section class="about-me">
+    <section id="sectionAboutMe" class="about-me">
 
       <div class="about-me__main">
         <div class="about-me__container">
@@ -94,7 +99,7 @@
 
     <!-- Skills -->
 
-    <section class="skills__main">
+    <section id="sectionSkills" class="skills__main">
 
       <h2 class="skills-hobbies__main--title title">Skills</h2>
       <div class="skills-hobbies__container">
@@ -128,7 +133,7 @@
 
     <!-- Hobbies -->
 
-    <section class="hobbies__main">
+    <section id="sectionHobbies" class="hobbies__main">
 
       <h2 class="skills-hobbies__main--title title">Hobbies</h2>
       <div class="skills-hobbies__container">
@@ -162,7 +167,7 @@
 
     <!-- Educación -->
 
-    <section class="education">
+    <section id="sectionEducation" class="education">
 
       <h2 class="education__title title">Formación Académica</h2>
       <div class="education__container">
@@ -195,7 +200,7 @@
 
   <!-- proyectos -->
   
-  <section class="projects">
+  <section id="sectionProjects" class="projects">
     
     <section class="projects__title">
       <h2 class="projects__title--portfolio title">Mi Portafolio</h2>
@@ -249,30 +254,47 @@
 
   <!-- Formulario -->
 
-  <form class="contact-form">
+  <section id="sectionContact" class="contact-form">
+
     <h2 class="form__title title">Contacto</h2>
+    
     <div class="form-container">
+
       <div class="form-img__container">
         <img class="form__img" src="./assets/img/an-innovative-graphic-design-illustration-showcasi-JmCzMr20QHq2RYQkFu7PPg-hCEyrdq1QlOkqJ3Ac8DiBg.jpeg" alt="">
-      </div>    
+      </div>
+
       <div class="form-info__container"> 
         <p class="form__info info">¿Quieres contactarme?</p>
-        <p class="form__info info">Complete el siguiente formulario  y me pondré en contacto con usted lo antes posible.</p>     
-        <div class="form__group">
+        <p class="form__info info">Complete el siguiente formulario  y me pondré en contacto con usted lo antes posible.</p> 
+
+        <form action="" method="POST" id="form" class="form__group">
+
           <label class="form__group--label subtitle" for="text">Nombre</label>
-          <input class="form__group--input info" type="text" placeholder="John Doe" required>
+          <input id="name" class="form__group--input info" type="text" placeholder="John Doe">
+          <span id="nameError" class="error-message"></span>
+
           <label class="form__group--label subtitle" for="text">Correo</label>
-          <input class="form__group--input info" type="email" placeholder="John@example.com" required>
+          <input id="email" class="form__group--input info" type="email" placeholder="John@example.com">
+          <span id="emailError" class="error-message"></span>
+
           <label class="form__group--label subtitle" for="text">Asunto</label>
-          <input class="form__group--input info" type="text" placeholder="Escribe el asunto" required>
+          <input id="matter" class="form__group--input info" type="text" placeholder="Escribe el asunto">
+          <span id="matterError" class="error-message"></span>
+
           <label class="form__group--label subtitle" for="text">Mensaje</label>
-          <textarea class="form__group--message info" name="mensaje" id="" placeholder="Escribe el mensaje" required></textarea>
-          <input class="form__group--sumit button" type="submit" value="Enviar mensaje">
-        </div>
+          <textarea id="message" class="form__group--message info" name="mensaje" id="" placeholder="Escribe el mensaje"></textarea>          
+          <span id="messageError" class="error-message"></span>
+
+          <input id="submitButton" class="form__group--sumit button" type="submit" value="Enviar mensaje">
+
+        </form>
+
       </div>
+
     </div>
 
-  </form>
+  </section>
 
   <!-- footer -->
 
@@ -280,6 +302,10 @@
     <p class="footer__info">Desarrollado por Jean Pierre Peña</p>
     <p class="footer__info">PierreDev | 2024</p>
   </footer>
+
+  <!-- Modulo JavaScript -->
+
+  <script src="/main.js" type="module"></script>
 
 </body>
 

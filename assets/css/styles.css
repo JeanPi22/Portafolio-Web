@@ -332,7 +332,7 @@ body {
   height: 4rem;
   border: solid 0.2rem var(--gray-light);
   border-radius: 1rem;
-  margin: 0.5rem 0 1.5rem 0;
+  margin: 0.5rem 0 0.5rem 0;
   padding: 0.8rem;
 }
 .form__group--input:focus, .form__group--message:focus {
@@ -364,4 +364,13 @@ body {
 }
 .footer__info {
   font-weight: 700;
+}
+
+/* Mensaje Error */
+
+.error-message {
+  height: auto;
+  color:var(--secundary-color);
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
 }

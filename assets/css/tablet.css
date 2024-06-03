@@ -124,3 +124,9 @@
 .form__info, .form-info__container {
   max-width: 65rem;
 }
+
+/* Mensaje Error */
+
+.error-message {
+  height: 1.5rem;
+}

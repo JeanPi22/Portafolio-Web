@@ -24,6 +24,7 @@
   padding: 2rem;
 }
 .nav__link:hover {
+  cursor: pointer;
   background-color: var(--Green-light);
   border-radius: 0.5rem;
 }
